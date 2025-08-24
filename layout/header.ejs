@@ -1,4 +1,33 @@
-<h1 class="header">header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<nav class="navbar navbar-expand-lg border-bottom sticky-top bg-white">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="../assets/images/logo.svg" class="me-4" alt="logo">
+        </a>
+
+        <div class="d-flex align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-md-flex align-items-center bg-white border head-search-group w-100  d-none">
+                <span class="material-symbols-outlined icon-img-24 me-1">
+                    search
+                </span>
+                <input type="text" class="header-search w-100" placeholder="搜尋景點、地點或城市" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-end">
+                <a href="#" class="me-3 border-0 d-none d-md-block"><span
+                        class="material-symbols-outlined icon-img-24 ">
+                        shopping_cart
+                    </span></a>
+                <a href="login.html" class="btn btn-primary text-white title">登入 / 註冊</a>
+            </div>
+        </div>
+
+    </div>
+</nav>

@@ -1,57 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ZOBAA!</title>
+	<link rel="icon" href="../assets/images/favicon.ico">
+</head>
+<body>
+	<%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/dog.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	<div class="container mx-auto index-contwiner mb-80">
+      <div class="hero position-relative border-radius-24">
+        <div class="position-absolute change-hero d-md-block d-none">
+          <p class="text-white align-items-center d-flex
+           body"><span class="material-symbols-outlined icon-img-24 me-2">
+              edit
+            </span>更換封面</p>
+        </div>
+        <div class="d-flex flex-column align-items-center position-absolute avatar-div">
+          <img src="../assets/images/member/avatar.png" alt="avatar" class="avatar mb-2">
+          <div class="circle d-flex justify-content-center align-items-center position-absolute avatar-edit">
+            <span class="material-symbols-outlined icon-img-24 text-white ">
+              edit
+            </span>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
+          <h2 class="h5 text-primary mb-25">Jessica</h2>
+          <p class="body ">jessica.yen@gmail.com</p>
         </div>
       </div>
     </div>
+	<div class="container mx-auto">
+		<div class="row py-75 bg-white  border-radius-24 mb-4">
+			<div class="col border-end py-125 text-md-start text-center">我的帳號</div>
+			<div class="col border-end py-125 text-md-start text-center">訂單管理</div>
+			<div class="col py-125 text-md-start text-center">我的收藏</div>
+		</div>
+		<div class="row py-400 px-5 bg-white  border-radius-24">
+			<h2 class="mb-40">我的帳號</h2>
+			<ul class="nav  mb-4 border-bottom" id="myTab" role="tablist">
+				<li class="nav-item">
+					<button class="nav-link active title text-primary" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+						type="button" role="tab" aria-controls="home" aria-selected="true">
+						個人資訊
+					</button>
+				</li>
+				<li class="nav-item">
+					<button class="nav-link body text-primary" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+						type="button" role="tab" aria-controls="profile" aria-selected="false">
+						常用旅客
+					</button>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+					<p class="body mb-2">姓名</p>
+					<p class="h6 mb-4">Jessica Yen</p>
+					<p class="body mb-2">電子信箱</p>
+					<p class="h6 mb-4">jessica.yen@gmail.com</p>
+					<p class="body mb-2">密碼</p>
+					<p class="h6 mb-4">************</p>
+					<p class="body mb-2">聯絡電話</p>
+					<p class="h6 mb-4">+886 912-345-678</p>
+					<p class="body mb-2">地址</p>
+					<p class="h6 mb-4">台北市士林區幸福路193號5樓之1</p>
+					<p class="body mb-2">生日</p>
+					<p class="h6 mb-40">1995-09-20</p>
+					<div class="text-end">
+						<a class="btn btn-outline-primary text-primary p-0 border-radius-12 under-btn " href="#">
+							<p class=" align-items-center d-flex body text-center w-100 p-1-btn py-3 px-5 border-radius-12 justify-content-center"><span class="material-symbols-outlined icon-img-24 me-2">edit</span>編輯資訊</p>
+						</a>
+					</div>
+				</div>
 
-    <%- include('./layout/footer'); -%>
+				<div class="tab-pane " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="d-flex p-md-4 p-3 border border-radius-20 bg-white mb-75 flex-column flex-md-row">
+						<div class="d-flex flex-row justify-content-start align-items-center mb-3">
+							<img src="../assets/images/member/avatar.png" alt="avatar-1" class="icon-img-40 me-2">
+							<p class="h6">Jessica Yen</p>
+						</div>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+						<div class="text-end w-100  edit-btn d-block d-flex d-md-none">
+							<a class="btn btn-outline-primary text-primary p-0 border-radius-12 me-2" href="#">
+								<p class=" align-items-center d-flex title text-center w-100 p-1-btn py-3 px-md-5 border-radius-12">
+								<span class="material-symbols-outlined icon-img-24 me-2">edit</span>編輯資訊</p>
+							</a>
+							<a class="btn btn-outline-primary text-primary p-0 border-radius-12" href="#">
+								<p class=" align-items-center d-flex title  text-center w-100 p-1-btn py-3 px-md-5 border-radius-12"><span class="material-symbols-outlined icon-img-24">edit</span>刪除</p>
+							</a>
+						</div>
+
+					</div>
+					<div class="d-flex align-items-md-center align-items-start p-md-4 p-3 border border-radius-20 bg-white s_mb-75 flex-md-row flex-column">
+
+						<div class="me-2 d-flex align-items-center mb-3">
+							<img src="../assets/images/avatar-2.jpg" alt="avatar-2"
+								class="icon-img-40 rounded-circle img-fluid me-2 d-block">
+							<p class="h6 mb-2 d-flex d-md-none">Jenny Lin</p>
+						</div>
+
+						<div class="d-flex flex-column text-nowrap d-none d-md-block">
+							<p class="h6 mb-2">Jenny Lin</p>
+							<p class="body text-primary d-flex mb-1 d-none d-md-block"><span class="material-symbols-outlined icon-img-16 me-2">cake</span>Jenny.Linnn@gmail.com</p>
+							<p class="body text-primary d-flex d-none d-md-block "><span class="material-symbols-outlined icon-img-16 me-2">mail</span>2001.01.30</p>
+						</div>
+
+						<div class="text-end w-100  edit-btn d-md-block d-flex">
+							<a class="btn btn-outline-primary text-primary p-0 border-radius-12 me-2" href="#">
+								<p class=" align-items-center d-flex title text-center w-100 p-1-btn py-3 px-md-5 border-radius-12">
+								<span class="material-symbols-outlined icon-img-24 me-2">edit</span>編輯資訊</p>
+							</a>
+							<a class="btn btn-outline-primary text-primary p-0 border-radius-12" href="#">
+								<p class=" align-items-center d-flex title text-center w-100 p-1-btn py-3 px-md-5 border-radius-12">
+								<span class="material-symbols-outlined icon-img-24">edit</span>刪除</p>
+							</a>
+						</div>
+					</div>
+					<div class="text-end">
+						<a class="btn btn-outline-primary text-primary p-0 border-radius-12 under-btn text-center" href="#">
+							<p class="align-items-center d-flex body text-center w-100 p-1-btn py-3 px-md-5 border-radius-12 justify-content-center"><span class="material-symbols-outlined icon-img-24 me-2">add</span>新增常用旅客</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<%- include('./layout/footer'); -%>
+
+	<%- include('./layout/modal'); -%>
+
+	<script type="module" src="../main.js"></script>
+</body>
 </html>

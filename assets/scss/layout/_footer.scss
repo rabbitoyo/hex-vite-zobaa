@@ -1,4 +1,10 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+@include media-breakpoint-down(sm) {
+    footer {
+        .container {
+            padding: 80px 12px;
+        }
+        .logo {
+            max-width: 192px;
+        }
+    }
 }
