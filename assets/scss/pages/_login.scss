@@ -1,3 +1,19 @@
 .loginBanner {
     max-width: 600px;
 }
+
+.login {
+    max-width: 604px;
+
+    button.border {
+        &:hover {
+            background-color: $neutral-40;
+        }
+    }
+}
+
+.forget {
+    &:hover {
+        text-decoration: underline;
+    }
+}

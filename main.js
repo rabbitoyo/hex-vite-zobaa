@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
     //login banner
     const loginBanner = new Swiper('.loginBanner', {
         effect: 'fade',
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
     })
 
 });

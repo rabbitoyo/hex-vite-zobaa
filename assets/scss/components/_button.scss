@@ -1,3 +1,9 @@
+.btn-primary {
+    &:hover, &.active {
+        background-color: $primary-120;
+        border-color: $primary-120;
+    }
+}
 .btn-outline-primary {
     background-color: $white;
 }
