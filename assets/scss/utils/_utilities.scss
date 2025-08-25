@@ -12,12 +12,12 @@ $utilities: map-merge(
 
 // font-size
 $mobile-font-sizes: (
-  h1: 2,
-  h2: 1.75,
-  h3: 1.5,
-  h4: 1.25,
-  h5: 1.125,
-  h6: .875,
+  h1: 2.5,
+  h2: 2,
+  h3: 1.75,
+  h4: 1.5,
+  h5: 1.25,
+  h6: 1.125,
 );
 
 @include media-breakpoint-down(md) {

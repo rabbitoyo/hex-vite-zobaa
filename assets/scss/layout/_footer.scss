@@ -2,6 +2,10 @@ footer {
     .nav-link {
         padding: 0;
         color: $white;
+
+        &:hover {
+            color: $neutral-50;
+        }
     }
 
     .copyright ul {

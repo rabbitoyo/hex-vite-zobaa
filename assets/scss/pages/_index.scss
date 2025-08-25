@@ -1,65 +1,95 @@
-.avatar {
-    border-radius: 6.25rem;
-    border: 4px solid $primary;
-    width: 160px;
-    height: 160px;
+.member {
+    background: url('../images/index/deco-bg.svg') no-repeat center 280px;
+    background-size: contain;
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.tab-pane {
     .avatar {
-        border: none;
-        width: 40px;
-        height: 40px;
+        border: 4px solid $primary;
+        width: 160px;
+        height: 160px;
 
         img {
-            width: 40px;
-            height: 40px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
-}
 
-.bg-line {
-    height: 878px;
-}
+    .member-list {
+        span {
+            position: relative;
+            display: inline-block;
+        }
+        .active span::after {
+            content: '';
+            border-radius: 2rem;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: -.625rem;
+            background-color: $primary-40;
+        }
+    }
 
-.change-hero {
-    right:32px;
-    bottom:32px;
-}
-.p-1-btn:hover{
-    color: white;
-    background-color:$primary;
-}
-.s_mb-75{
-    margin-bottom: $spacer*0.75;
-}
+    .nav-link {
+        position: relative;
 
-@media(max-width:576px){
-    .hero {
-        height: 200px;
+        &.active {
+            color: $primary;
+            font-weight: $font-weight-semibold;
+
+            &::after {
+                content: '';
+                border-radius: 2rem;
+                display: block;
+                position: absolute;
+                width: 50%;
+                height: 4px;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $primary;
+            }
+        }
     }
-    .avatar-div {
-        bottom:-65%;
-        left: 30%;
+
+    .tab-pane {
+        .avatar {
+            border: none;
+            width: 40px;
+            height: 40px;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
     }
-    .mb-80 {
-        margin-bottom: 40px;
-    }
-    .edit-btn a p {
-        width: 50%;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    .under-btn {
-        width: 100%;
-    }
-    .s_mb-75 {
-        margin-bottom: 40px;
+
+    @include media-breakpoint-down(md) {
+        .pb-md-xl {
+            img {
+                height: 200px;
+            }
+        }
+
+        .avatar {
+            border: 2px solid $primary;
+            width: 120px;
+            height: 120px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .tab-pane {
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
     }
 }
