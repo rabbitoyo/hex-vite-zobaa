@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ZOBAA!</title>
 	<link rel="icon" href="../assets/images/favicon.ico">
-  <script type="module" crossorigin src="/hex-vite-zobaa/assets/main-CAxwJhXB.js"></script>
-  <link rel="stylesheet" crossorigin href="/hex-vite-zobaa/assets/main-BP2I9MJK.css">
+  <script type="module" crossorigin src="/hex-vite-zobaa/assets/main-BjYpQIDx.js"></script>
+  <link rel="stylesheet" crossorigin href="/hex-vite-zobaa/assets/main-D_czSYdb.css">
 </head>
 <body>
 	<nav class="navbar sticky-top">
@@ -19,27 +19,27 @@
                     </a>
                 </h1>
                 <form class="position-relative ms-4 d-none d-lg-block">
-                    <span class="material-symbols-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-3 text-neutral-60">search</span>
+                    <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-3 text-neutral-60">search</span>
                     <input type="search" class="form-control rounded-3 ps-8" placeholder="搜尋景點、地點或城市">
                 </form>
                 <ul class="list-unstyled d-flex align-items-center mb-0 ms-auto">
                     <li>
-                        <button type="button" class="p-2 d-lg-none">
-                            <span class="material-symbols-outlined">search</span>
+                        <button type="button" class="p-2 d-lg-none fs-0">
+                            <span class="material-icons-outlined">search</span>
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="px-3 py-2 ">
-                            <span class="material-symbols-outlined">shopping_cart</span>
+                        <button type="button" class="px-3 py-2 fs-0">
+                            <span class="material-icons-outlined">shopping_cart</span>
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="p-2 d-lg-none">
-                            <span class="material-symbols-outlined">menu</span>
+                        <button type="button" class="p-2 d-lg-none fs-0">
+                            <span class="material-icons-outlined">menu</span>
                         </button>
                     </li>
                     <li>
-                        <a class="btn btn-primary d-none d-lg-block" href="login.html">登入 / 註冊</a>
+                        <a class="btn btn-primary d-none d-lg-block ms-4" href="login.html">登入 / 註冊</a>
                     </li>
                     <li>
                         <a class="member d-none align-items-center ms-4" href="">
@@ -53,106 +53,131 @@
             </div>
         </div>
     </nav>
-	<section class="py-lg">
+	<section class="member py-8 py-lg-lg">
 		<div class="container">
-			<div class="position-relative mb-12 pb-12">
+			<div class="position-relative mb-8 mb-md-12 pb-md pb-md-xl">
 				<img class="img-fluid rounded-5" src="/hex-vite-zobaa/assets/hero-Ky0O1_QM.png" alt="banner">
-				<div class="position-absolute bottom-0 end-0 me-7 mb-lg d-none d-md-block">
-					<p class="text-white d-flex align-items-center"><span class="material-symbols-outlined me-2">edit</span>更換封面</p>
+				<div class="position-absolute bottom-0 end-0 me-7 mb-xl pb-7 d-none d-md-block">
+					<p class="text-white d-flex align-items-center"><span class="material-icons-sharp me-2">edit</span>更換封面</p>
 				</div>
-				<div class="position-absolute bottom-0 start-50 translate-middle-x pt-12">
-					<div class="avatar position-relative mb-2">
+				<div class="position-absolute bottom-0 start-50 translate-middle-x">
+					<div class="avatar position-relative start-50 translate-middle-x rounded-pill text-center mb-2">
 						<img class="rounded-pill mb-2" src="/hex-vite-zobaa/assets/avatar-1-B3ZHBYc7.jpg" alt="avatar">
-						<div class="position-absolute bottom-0 end-0 bg-primary rounded-pill p-2 py-1">
-							<span class="material-symbols-outlined icon-img-24 text-white">edit</span>
+						<div class="position-absolute bottom-0 end-0 bg-primary rounded-pill p-2 fs-0">
+							<span class="material-icons-sharp text-white">edit</span>
 						</div>
 					</div>
-					<h2 class="h5 text-primary text-center">Jessica</h2>
-					<p class="fs-title">jessica.yen@gmail.com</p>
+					<h2 class="h5 text-primary text-center mb-1">Jessica</h2>
+					<p class="text-neutral-80 fs-subtitle fs-md-title">jessica.yen@gmail.com</p>
 				</div>
 			</div>
 
-			<div class="bg-white d-flex rounded-5 mb-6">
-				<div class="p-6">我的帳號</div>
-				<div class="p-6">訂單管理</div>
-				<div class="p-6">我的收藏</div>
-			</div>
+			<ul class="member-list list-unstyled bg-white d-flex rounded-5 shadow px-3 mb-6">
+				<li class="col px-3 py-4">
+					<a class="d-block py-3 border-end active" href="">
+						<span class="fw-bold">我的帳號</span>
+					</a>
+				</li>
+				<li class="col px-3 py-4">
+					<a class="d-block py-3 border-end" href="">
+						<span class="fw-bold ">訂單管理</span>
+					</a>
+				</li>
+				<li class="col px-3 py-4">
+					<a class="d-block py-3" href="">
+						<span class="fw-bold">我的收藏</span>
+					</a>
+				</li>
+			</ul>
 
-			<div class="bg-white rounded-5 p-7">
-				<h2 class="fw-bold mt-7 mb-8">我的帳號</h2>
-				<ul class="nav mb-6 border-bottom" id="myTab" role="tablist">
-					<li class="nav-item">
-						<button class="nav-link active title text-primary" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-							type="button" role="tab" aria-controls="home" aria-selected="true">
+			<div class="bg-white rounded-5 shadow p-4 p-md-7">
+				<h2 class="fw-bold mt-4 mt-md-7 mb-8">我的帳號</h2>
+				<ul class="nav border-bottom column-gap-7 mb-6" id="pills-tab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button type="button" class="nav-link active" id="personal-tab" data-bs-toggle="pill" data-bs-target="#personal" role="tab" aria-controls="personal" aria-selected="true">
 							個人資訊
 						</button>
 					</li>
-					<li class="nav-item">
-						<button class="nav-link body text-primary" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-							type="button" role="tab" aria-controls="profile" aria-selected="false">
+					<li class="nav-item" role="presentation">
+						<button type="button" class="nav-link" id="other-tab" data-bs-toggle="pill" data-bs-target="#other" role="tab" aria-controls="other" aria-selected="false">
 							常用旅客
 						</button>
 					</li>
 				</ul>
-				<div class="tab-content">
-					<div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-						<p class="body mb-2">姓名</p>
-						<p class="h6 mb-4">Jessica Yen</p>
-						<p class="body mb-2">電子信箱</p>
-						<p class="h6 mb-4">jessica.yen@gmail.com</p>
-						<p class="body mb-2">密碼</p>
-						<p class="h6 mb-4">************</p>
-						<p class="body mb-2">聯絡電話</p>
-						<p class="h6 mb-4">+886 912-345-678</p>
-						<p class="body mb-2">地址</p>
-						<p class="h6 mb-4">台北市士林區幸福路193號5樓之1</p>
-						<p class="body mb-2">生日</p>
-						<p class="h6 mb-40">1995-09-20</p>
-						<div class="text-end">
-							<a class="btn btn-outline-primary text-primary p-0 border-radius-12 under-btn " href="#">
-								<p class="align-items-center d-flex body text-center w-100 p-1-btn py-3 px-5 border-radius-12 justify-content-center"><span class="material-symbols-outlined icon-img-24 me-2">edit</span>編輯資訊</p>
-							</a>
+
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade active show" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+
+						<div class="mb-6">
+							<p class="text-neutral-80 mb-2">姓名</p>
+							<p class="h6 text-black">Jessica Yen</p>
 						</div>
+						<div class="mb-6">
+							<p class="text-neutral-80 mb-2">電子信箱</p>
+							<p class="h6 text-black">jessica.yen@gmail.com</p>
+						</div>
+						<div class="mb-6">
+							<p class="text-neutral-80 mb-2">密碼</p>
+							<p class="h6 text-black">************</p>
+						</div>
+						<div class="mb-6">
+							<p class="text-neutral-80 mb-2">聯絡電話</p>
+							<p class="h6 text-black">+886 912-345-678</p>
+						</div>
+						<div class="mb-6">
+							<p class="text-neutral-80 mb-2">地址</p>
+							<p class="h6 text-black">台北市士林區幸福路193號5樓之1</p>
+						</div>
+						<div class="mb-8">
+							<p class="text-neutral-80 mb-2">生日</p>
+							<p class="h6 text-black">1995-09-20</p>
+						</div>
+
+						<button type="button" class="btn btn-outline-primary d-flex align-items-center fs-title ms-auto">
+							<span class="material-icons-sharp me-1">edit</span>編輯資訊
+						</button>
+
 					</div>
 
-					<div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="tab-pane" id="other" role="tabpanel" aria-labelledby="other-tab">
 
-						<div class="p-6 border rounded-4">
+						<div class="border rounded-4 p-4 p-md-6 mb-3">
 							<div class="avatar d-flex align-items-center w-100">
 								<img class="rounded-pill me-2" src="/hex-vite-zobaa/assets/avatar-1-B3ZHBYc7.jpg" alt="avatar">
 								<p class="h6">Jessica Yen</p>
 							</div>
 						</div>
 
-						<div class="d-flex p-6 border rounded-4">
+						<div class="d-flex flex-wrap justify-content-between align-items-center border rounded-4 p-4 p-md-6 mb-8 bg-primary-10">
 
-							<div class="avatar d-flex">
+							<div class="avatar d-flex me-2 mb-4 mb-md-0">
 								<img class="rounded-pill mb-2" src="/hex-vite-zobaa/assets/avatar-2-DnAYNYlX.jpg" alt="avatar">
 							</div>
 
-							<div class="d-flex flex-column text-nowrap d-none d-md-block ms-auto">
+							<div class="me-auto">
 								<p class="h6 mb-2">Jenny Lin</p>
-								<p class="body text-primary d-flex mb-1 d-none d-md-block"><span class="material-symbols-outlined icon-img-16 me-2">cake</span>Jenny.Linnn@gmail.com</p>
-								<p class="body text-primary d-flex d-none d-md-block "><span class="material-symbols-outlined icon-img-16 me-2">mail</span>2001.01.30</p>
+								<p class="text-primary d-flex align-items-center mb-1 d-none d-md-block">
+									<span class="material-icons-outlined fs-title me-2">mail</span>Jenny.Linnn@gmail.com
+								</p>
+								<p class="text-primary d-flex align-items-center d-none d-md-block">
+									<span class="material-icons-outlined fs-title me-2">cake</span>2001.01.30
+								</p>
 							</div>
 
-							<div class="text-end w-100  edit-btn d-md-block d-flex">
-								<a class="btn btn-outline-primary text-primary p-0 border-radius-12 me-2" href="#">
-									<p class=" align-items-center d-flex title text-center w-100 p-1-btn py-3 px-md-5 border-radius-12">
-									<span class="material-symbols-outlined icon-img-24 me-2">edit</span>編輯資訊</p>
-								</a>
-								<a class="btn btn-outline-primary text-primary p-0 border-radius-12" href="#">
-									<p class=" align-items-center d-flex title text-center w-100 p-1-btn py-3 px-md-5 border-radius-12">
-									<span class="material-symbols-outlined icon-img-24">edit</span>刪除</p>
-								</a>
+							<div class="d-flex justify-content-center column-gap-2">
+								<button type="button" class="btn btn-outline-primary d-flex align-items-center">
+									<span class="material-icons-sharp me-1">edit</span>編輯資訊
+								</button>
+								<button type="button" class="btn btn-outline-primary d-flex align-items-center">
+									<span class="material-icons-sharp me-1">close</span>刪除
+								</button>
 							</div>
+							
 						</div>
 
-						<div class="text-end">
-							<a class="btn btn-outline-primary text-primary p-0 border-radius-12 under-btn text-center" href="#">
-								<p class="align-items-center d-flex body text-center w-100 p-1-btn py-3 px-md-5 border-radius-12 justify-content-center"><span class="material-symbols-outlined icon-img-24 me-2">add</span>新增常用旅客</p>
-							</a>
-						</div>
+						<button type="button" class="btn btn-outline-primary d-flex align-items-center fs-title ms-auto">
+							<span class="material-icons-sharp me-1">add</span>新增常用旅客
+						</button>
 
 					</div>
 				</div>
