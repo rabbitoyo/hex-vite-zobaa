@@ -67,6 +67,8 @@
     }
 
     @include media-breakpoint-down(md) {
+        background: none;
+
         .pb-md-xl {
             img {
                 height: 200px;
@@ -85,10 +87,19 @@
             }
         }
 
+        .bg-white.rounded-5 {
+            --bs-border-radius-xxl: 1rem;
+        }
+
         .tab-pane {
             .btn {
                 width: 100%;
                 justify-content: center;
+            }
+            .column-gap-2 {
+                .btn {
+                    width: auto;
+                }
             }
         }
     }
