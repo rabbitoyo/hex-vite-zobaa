@@ -1,33 +1,40 @@
-<nav class="navbar navbar-expand-lg border-bottom sticky-top bg-white">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="../assets/images/logo.svg" class="me-4" alt="logo">
-        </a>
-
-        <div class="d-flex align-items-center">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-md-flex align-items-center bg-white border head-search-group w-100  d-none">
-                <span class="material-symbols-outlined icon-img-24 me-1">
-                    search
-                </span>
-                <input type="text" class="header-search w-100" placeholder="搜尋景點、地點或城市" aria-label="Username"
-                    aria-describedby="basic-addon1">
+<nav class="navbar sticky-top">
+        <div class="container">
+            <div class="d-flex align-items-center w-100">
+                <h1 class="fs-0">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="img-fluid" src="../assets/images/logo.svg" alt="ZOBAA!">
+                    </a>
+                </h1>
+                <form class="position-relative ms-4 d-none d-lg-block">
+                    <span class="material-symbols-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-3 text-neutral-60">search</span>
+                    <input type="search" class="form-control rounded-3 ps-8" placeholder="搜尋景點、地點或城市">
+                </form>
+                <ul class="list-unstyled d-flex align-items-center mb-0 ms-auto">
+                    <li>
+                        <button type="button" class="p-2 d-lg-none">
+                            <span class="material-symbols-outlined">search</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="px-3 py-2 ">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="p-2 d-lg-none">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </li>
+                    <li>
+                        <a class="member d-none d-lg-flex align-items-center ms-4" href="">
+                            <div class="avatar">
+                                <img class="img-fluid rounded-circle" src="../assets/images/member/avatar-1.jpg" alt="avatar">
+                            </div>
+                            <span class="text-primary fw-bold ms-2">Jessica</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-6 d-flex align-items-center justify-content-end">
-                <a href="#" class="me-3 border-0 d-none d-md-block"><span
-                        class="material-symbols-outlined icon-img-24 ">
-                        shopping_cart
-                    </span></a>
-                <a href="login.html" class="btn btn-primary text-white title">登入 / 註冊</a>
-            </div>
         </div>
-
-    </div>
-</nav>
+    </nav>

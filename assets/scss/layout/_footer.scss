@@ -1,9 +1,24 @@
-@include media-breakpoint-down(sm) {
-    footer {
-        .container {
-            padding: 80px 12px;
+footer {
+    .nav-link {
+        padding: 0;
+        color: $white;
+    }
+
+    .copyright ul {
+        justify-content: end;
+    }
+
+    @include media-breakpoint-down(lg) {
+        .menu, .copyright {
+            width: 100%;
         }
-        .logo {
+        .copyright ul {
+            justify-content: start;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .navbar-brand {
             max-width: 192px;
         }
     }

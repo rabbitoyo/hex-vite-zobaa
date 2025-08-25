@@ -1,12 +1,41 @@
-.logo-img{
-    width: 180px;
-    height: 30px;
-}
-.header-search{
+.navbar {
+    transition: background-color .3s ease, backdrop-filter .3s ease;
     background-color: transparent;
-    border-color: transparent;
-}
-.head-search-group{
-    padding: 10px 12px;
-    border-radius: 8px;
+
+    @include media-breakpoint-down(lg) {
+        --bs-navbar-padding-y: .75rem;
+        background-color: $white;
+
+        .navbar-brand {
+            padding: 0;
+        }
+    }
+
+    &.scrolled {
+        background-color: rgba(255, 255, 255, 0.72);
+        backdrop-filter: blur(8px);
+    }
+
+    .form-control {
+        background-color: $white;
+    }
+
+    .member {
+        &:hover span {
+            text-decoration: underline;
+        }
+    }
+
+    .avatar {
+        border: none;
+        width: 32px;
+        height: 32px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            object-position: center;
+        }
+    }
 }

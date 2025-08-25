@@ -10,6 +10,17 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    //navbar scroll
+    window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 80) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+
+    //login banner
     const loginBanner = new Swiper('.loginBanner', {
         effect: 'fade',
     })

@@ -1,61 +1,36 @@
-.box {
-    height: 200px;
-    width: 200px;
+.avatar {
+    border-radius: 6.25rem;
+    border: 4px solid $primary;
+    width: 160px;
+    height: 160px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
-.bg-primary-120 {
-    background-color: darken($primary, 20%);
-}
+.tab-pane {
+    .avatar {
+        border: none;
+        width: 40px;
+        height: 40px;
 
-.bg-primary {
-    background-color: $primary;
-}
-
-.index-contwiner {
-    padding: 120px 0px;
-}
-
-.hero {
-    background:url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/user/hero.png?raw=true');
-    background-repeat:no-repeat;
-    background-position: center center;
-    height: 480px;
-    background-size: cover; /* 延展背景並維持比例 */
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
 }
 
 .bg-line {
     height: 878px;
 }
 
-.change-hero{
+.change-hero {
     right:32px;
     bottom:32px;
-}
-
-.avatar {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 4px solid $primary;
-}
-.circle {
-    width: 40px;
-    height: 40px;
-    background-color: $primary; /* 背景顏色 */
-    border-radius: 50%;        /* 關鍵：讓方形變成圓形 */
-}
-
-.avatar-div{
-    bottom:-25%;
-    left: 45%;
-}
-.avatar-edit{
-    right: 5%;
-    bottom:25%;
-}
-
-.rounded-pill{
-    border-radius: 24px;
 }
 .p-1-btn:hover{
     color: white;
